@@ -1,2 +1,2 @@
 # digital-solution-website
-A professional digital solutions website offering web design, development, and online services.
+Social Media Marketing, Branding & Business Growth Solutions.

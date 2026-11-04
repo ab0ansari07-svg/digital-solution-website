@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Digital Solution helps businesses grow with website development, graphic design, social media marketing and digital marketing services in Pakistan.">
+  <meta name="keywords" content="website development Pakistan, graphic designing, social media marketing, digital marketing, Peshawar">
+  <meta name="theme-color" content="#101a36">
+  <title>Digital Solution | Web Development & Digital Marketing</title>
+  <style>
+    :root{--navy:#101a36;--blue:#4263eb;--cyan:#22c7d8;--ink:#172033;--muted:#667085;--light:#f5f7fc;--white:#fff}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6}
+    a{text-decoration:none;color:inherit}.wrap{width:min(1120px,92%);margin:auto}
+    header{background:rgba(16,26,54,.97);color:#fff;position:sticky;top:0;z-index:10}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 0}
+    .brand{font-size:1.25rem;font-weight:800;letter-spacing:.4px}.brand span{color:var(--cyan)}
+    nav{display:flex;gap:22px;align-items:center;font-size:.93rem}nav a{opacity:.9}nav a:hover{color:var(--cyan)}
+    .btn{display:inline-block;background:linear-gradient(100deg,var(--blue),#6849d8);color:white;padding:12px 19px;border-radius:10px;font-weight:700;border:0}
+    .hero{background:radial-gradient(circle at 80% 25%,#27468c 0,#172750 27%,var(--navy) 66%);color:#fff;padding:92px 0 84px;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:42px;align-items:center}
+    .eyebrow{color:#7de7ef;font-weight:700;text-transform:uppercase;letter-spacing:1.8px;font-size:.78rem}
+    h1{font-size:clamp(2.5rem,5vw,4.4rem);line-height:1.08;margin:14px 0 20px;letter-spacing:-1.8px}
+    .hero p{color:#d8e2ff;font-size:1.08rem;max-width:610px}.hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:28px}
+    .btn-outline{border:1px solid #8193c3;color:#fff;padding:11px 18px;border-radius:10px;font-weight:700}
+    .visual{min-height:330px;position:relative;display:grid;place-items:center}
+    .orb{width:260px;height:260px;border-radius:50%;background:linear-gradient(135deg,#23d0db,#4263eb 60%,#8a5cf6);filter:drop-shadow(0 25px 45px #0007);display:grid;place-items:center}
+    .orb-inner{width:190px;height:190px;border-radius:30px;background:#101a36;border:1px solid #8cecf0;display:grid;place-items:center;text-align:center;padding:22px;transform:rotate(-7deg)}
+    .orb-inner strong{font-size:2.1rem;line-height:1.1}.orb-inner span{color:#9eeef1;font-size:.85rem}
+    .float{position:absolute;background:#fff;color:var(--navy);padding:13px 16px;border-radius:13px;box-shadow:0 15px 35px #0003;font-weight:700}
+    .float.one{top:30px;right:0}.float.two{bottom:28px;left:0}
+    section{padding:76px 0}.section-head{text-align:center;max-width:700px;margin:0 auto 38px}.section-head .eyebrow{color:var(--blue)}
+    h2{font-size:clamp(2rem,3vw,2.7rem);line-height:1.15;margin:10px 0 12px;color:var(--navy)}
+    .section-head p,.muted{color:var(--muted)}
+    .services{background:var(--light)}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .card{background:#fff;padding:25px 22px;border-radius:17px;box-shadow:0 8px 30px #1720330b;border:1px solid #e9edf6}
+    .ico{width:48px;height:48px;border-radius:13px;background:#eaf0ff;display:grid;place-items:center;font-size:1.45rem;margin-bottom:17px}
+    .card h3{margin:0 0 8px;color:var(--navy)}.card p{font-size:.94rem;color:var(--muted);margin:0}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+    .about-panel{background:linear-gradient(145deg,#edf3ff,#e9fbfc);border-radius:22px;padding:35px}
+    .checks{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:24px}.check{font-weight:700;font-size:.92rem}
+    .check:before{content:"✓";color:#16a6ae;font-weight:900;margin-right:8px}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{border:1px solid #e7ebf4;border-radius:16px;padding:24px}
+    .num{font-size:1.8rem;font-weight:900;color:var(--blue)}
+    .portfolio{background:var(--light)}.portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .project{min-height:185px;border-radius:17px;padding:24px;color:#fff;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(140deg,#253f86,#5c51c9)}
+    .project:nth-child(2){background:linear-gradient(140deg,#087d91,#26b6b0)}.project:nth-child(3){background:linear-gradient(140deg,#a34c8a,#ef8c6c)}
+    .project small{opacity:.85}.project strong{font-size:1.2rem}
+    .cta{background:var(--navy);color:#fff;text-align:center}.cta h2{color:#fff}.cta p{color:#d6def4;max-width:650px;margin:0 auto 24px}
+    footer{background:#0a1125;color:#c8d1e8;padding:28px 0;font-size:.9rem}.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+    @media(max-width:850px){.hero-grid,.about-grid{grid-template-columns:1fr}.visual{min-height:280px}.cards{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:600px){nav{display:none}.hero{padding:65px 0}.cards,.steps,.portfolio-grid{grid-template-columns:1fr}.checks{grid-template-columns:1fr}.orb{width:220px;height:220px}.orb-inner{width:160px;height:160px}.float.one{right:0}.float.two{left:0}section{padding:58px 0}}
+  </style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="brand" href="#">DIGITAL<span> SOLUTION</span></a>
+  <nav><a href="#services">Services</a><a href="#about">About</a><a href="#work">Portfolio</a><a href="#contact">Contact</a></nav>
+  <a class="btn" href="#contact">Get a Quote</a>
+</div></header>
+
+<main>
+<section class="hero"><div class="wrap hero-grid">
+  <div>
+    <div class="eyebrow">Creative ideas. Digital growth.</div>
+    <h1>Build your brand.<br>Grow your business.</h1>
+    <p>We help businesses create a powerful online presence with modern websites, memorable graphic design and practical digital marketing.</p>
+    <div class="hero-actions"><a class="btn" href="#contact">Start Your Project</a><a class="btn-outline" href="#services">Explore Services</a></div>
+  </div>
+  <div class="visual" aria-label="Digital services illustration">
+    <div class="orb"><div class="orb-inner"><strong>DS</strong><span>Ideas into impact</span></div></div>
+    <div class="float one">✦ Creative Design</div><div class="float two">↗ Digital Growth</div>
+  </div>
+</div></section>
+
+<section class="services" id="services"><div class="wrap">
+  <div class="section-head"><div class="eyebrow">What we do</div><h2>Digital services for your next stage of growth</h2><p>Choose the support you need. We build practical digital solutions around your business goals.</p></div>
+  <div class="cards">
+    <article class="card"><div class="ico">⌘</div><h3>Website Development</h3><p>Responsive, user-friendly websites that present your business clearly and help turn visitors into enquiries.</p></article>
+    <article class="card"><div class="ico">✎</div><h3>Graphic Designing</h3><p>Logos, brand visuals, social media creatives and marketing designs that make your business stand out.</p></article>
+    <article class="card"><div class="ico">◎</div><h3>Social Media Marketing</h3><p>Content planning and social media support to help you connect with the right audience and build trust.</p></article>
+    <article class="card"><div class="ico">↗</div><h3>Digital Marketing</h3><p>Digital campaigns and online visibility strategies aligned with your audience, offer and business objectives.</p></article>
+  </div>
+</div></section>
+
+<section id="about"><div class="wrap about-grid">
+  <div><div class="eyebrow">Why Digital Solution</div><h2>One team for your digital presence</h2><p class="muted">From your first website to ongoing creative and marketing support, Digital Solution helps bring your business online with a consistent, professional image.</p>
+    <div class="checks"><div class="check">Business-focused approach</div><div class="check">Responsive design</div><div class="check">Creative execution</div><div class="check">Clear communication</div></div>
+  </div>
+  <div class="about-panel"><div class="eyebrow">Our approach</div><h3>Understand. Create. Improve.</h3><p class="muted">We start by understanding your goals, create a solution that fits your needs, then help you improve your digital presence over time.</p><a class="btn" href="#contact">Talk About Your Project</a></div>
+</div></section>
+
+<section class="portfolio" id="work"><div class="wrap">
+  <div class="section-head"><div class="eyebrow">Our work</div><h2>Selected work & creative projects</h2><p>Replace these sample blocks with screenshots and details of your real projects before publishing.</p></div>
+  <div class="portfolio-grid">
+    <div class="project"><small>Website project</small><strong>Business Website Design</strong></div>
+    <div class="project"><small>Brand identity</small><strong>Logo & Social Creatives</strong></div>
+    <div class="project"><small>Marketing project</small><strong>Social Media Campaign</strong></div>
+  </div>
+</div></section>
+
+<section><div class="wrap"><div class="section-head"><div class="eyebrow">How it works</div><h2>A simple process from idea to launch</h2></div>
+  <div class="steps"><div class="step"><div class="num">01</div><h3>Share your goals</h3><p class="muted">Tell us about your business, audience and what you want to achieve.</p></div>
+  <div class="step"><div class="num">02</div><h3>Get a clear plan</h3><p class="muted">We discuss the right service, scope, timeline and project requirements.</p></div>
+  <div class="step"><div class="num">03</div><h3>Launch & grow</h3><p class="muted">We deliver the agreed work and discuss the next steps for your business.</p></div></div>
+</div></section>
+
+<section class="cta" id="contact"><div class="wrap"><div class="eyebrow">Let's work together</div><h2>Have a project in mind?</h2><p>Tell us what you need and let's discuss how Digital Solution can help your business move forward.</p>
+  <a class="btn" href="tel:+923349027063">Call: 0334 9027063</a>
+  <a class="btn-outline" href="mailto:ab0ansari07@gmail.com" style="display:inline-block;margin-left:8px">Send Email</a>
+  <p style="font-size:.85rem;margin-top:18px">Email: <strong>ab0ansari07@gmail.com</strong> · Phone: <strong>0334 9027063</strong> · Peshawar, Pakistan</p>
+</div></section>
+</main>
+<footer><div class="wrap foot"><div>© <span id="year"></span> Digital Solution. All rights reserved.</div><div>Website Development · Graphic Design · Digital Marketing</div></div></footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
